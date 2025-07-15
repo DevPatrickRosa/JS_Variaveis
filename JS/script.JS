@@ -181,6 +181,199 @@ let numeroConvertido2 = +stringNumero2
 
 console.log(numeroConvertido1, numeroConvertido2);
 
+// convertendo de números para string
+
+// Usando o toString()
+
+let numero666 = 666
+let stringNumero666 = numero666.toString()
+console.log(stringNumero666);
+
+
+//USANDO O String()
+
+let numero33 = 33
+let stringNumero33 = String(numero33)
+console.log(stringNumero33);
+
+/* Conhecendo Estruturas Condicionais 
+ - Os programas são executados de cima para baixo;
+ - Com estas estruturas podemos alterar o fluxode execução;
+ - O Caminho dependerá das condições e comparações;*/
+
+ //USANDO If
+
+ // if: Executarum bloco de código, se uam condição for verdadeira.
+
+ // SINTAXE: if (condição){}
+
+ // Exemplo 01
+
+ let idadeMaria = 71
+
+ let idadeJoao = 63
+
+ if (idadeMaria  > idadeJoao){
+    console.log("exemplo 01 de if: Ih rapaz, a Maria é mais velha que o João");    
+ }
+
+ // Exemplo 02
+
+ let usuario = "Gustavo"
+
+ if (usuario === "Gustavo"){
+    console.log(`Fala meu camarada ${usuario}, seu casca de bala!`);
+    
+ }
+
+ // Usando o else if
+
+ // else if: Adiciona uam nova condição, se a condição anterior for falsa.
+
+ /* Sintaxe:
+ 
+ if (condição){
+}
+ else if (outraCondicao){
+}*/
+
+// EXEMPLO 01
+
+let logadoTikTok = false
+
+if (logadoTikTok === true){
+    console.log("Bem-vindo meu caro desocupado!");    
+}
+
+else if(logadoTikTok===false){
+    console.log("Até que enfim,foi lavar a louça!");    
+}
+
+// Exemplo 02
+
+let nomeUsuaria = "Vanessa"
+
+if (nomeUsuaria==="Rebeca"){
+    console.log("Seja bem-vinda Rebeca. Vamos estudar?");    
+}
+
+else if (nomeUsuaria==="Leticia"){
+    console.log("Seja bem-vinda Leticia. Vamos Estudar?");    
+}
+
+else if (nomeUsuaria==="Vanessa"){
+    console.log("Seja bem-vinda Vanessa. Vamos Estudar?");    
+}
+
+// USANDO o else
+
+    /*else: Executa um bloco de códigos se todas as condições anteriores forem falsas.
+    
+    Sintaxe:
+    
+    if (condição){}
+
+    else if (outra condição){}
+
+    else {} */
+
+    // if e o else, só temos 1, no ínicio e outro no final.
+    // else if, eu posso ter vários ao longo da comparação;
+
+    // EXEMPLO 01
+
+    let corEscolhida = "Preta"
+
+    if (corEscolhida=== "Branca"){
+        console.log("Ótima escolha! Seu possante será branco!");
+        }
+
+    else if (corEscolhida=== "Vermelha"){
+        console.log("Caraca feio,teu carro vai ser vermelho.");
+    }
+
+    else {
+        console.log("Poxa, só temos duas cores disponiveis no momento. Escolha Branco ou Vermelho.");
+    }
+
+    // EXEMPLO 02
+
+    let idadeUsuario = 37
+
+    if (idadeUsuario <=17){
+        console.log("Este site não é permitido o acesso por menores de idade.");        
+    }
+
+    else if (idadeUsuario ===18){
+        console.log("Juizo ai meu nobre!");        
+    }
+
+    else if (idadeUsuario >= 90){
+        console.log("Eita nois,então tá... Olha o coração!");        
+    }
+
+    else {
+        console.log("Boa Diversão.");
+    }
+
+    // OPERADORES LÓGICOS
+
+ // EXEMPLO 01 - && "ANO"
+
+ let nomeUsuario01 = "Marcos"
+ let senhaUsuario = 1234
+
+ if (nomeUsuario01==="marcos" && senhaUsuario===2432) {
+    console.log("Login realizado com sucesso.");    
+ }
+
+ else{
+    console.log("Insira os dados corretamente.");    
+ }
+
+ // EXEMPLO 02
+
+ let temDinheiro = true
+ let  temCartao = false
+
+ if (temDinheiro === true || temCartao=== true){
+    console.log("Pode efetuar a compra.");    
+ }
+
+ else {
+    console.log( "Tá liso feio");    
+ }
+
+ // EXEMPLO 03 ! "NOT"
+
+ let estaChovendo = true
+ 
+ if(!estaChovendo){
+    console.log("Parece que não está chovendo, que tal uma voltinha de bike?");    
+ }
+
+ else{
+    console.log("Ih, tá chovendo! Melhor deixar para depois...");    
+ }
+
+ // EXEMPLO PRÁTICO COM && E OR
+
+ let idadeParticipante  = 20
+ let temDocumento = true
+
+ if(idadeParticipante <= 17 && temDocumento){
+    console.log("Menor, mas pode paricipar do evento.");    
+ }
+
+ else if (idadeParticipante <= 17 || !temDocumento){
+    console.log("Não pode participar.");    
+ }
+
+ else{
+    console.log("Pode participar.");    
+ }
+
+
 
 
 
