@@ -42,7 +42,7 @@ const anoNascimento = 1993
 
 const nomeCompleto = "Patrick Rosa"
 
-console.log(nomeFulano, anoNascimento,nomeCompleto);
+console.log(nomeFulano, anoNascimento, nomeCompleto);
 
 // exceção à regra: Os únicos caracteres especiais que podemos utilizar no iniciode nome de variaveis são:
 
@@ -94,7 +94,7 @@ let multiplicacao = x * y
 
 console.log(multiplicacao);
 
-let divisao  = y / x
+let divisao = y / x
 
 console.log(divisao);
 
@@ -104,9 +104,9 @@ x = 5
 
 y = 10
 
-console.log(x<y); // true
-console.log(x===y); // false
-console.log(x!==y); // true
+console.log(x < y); // true
+console.log(x === y); // false
+console.log(x !== y); // true
 
 //=====================================================================
 
@@ -121,7 +121,7 @@ let total = quantidade * precoUnitario
 
 // Ao inves de disso:
 
-console.log("Você comprou: " + quantidade +" " + produto + "por" + total + " reais");
+console.log("Você comprou: " + quantidade + " " + produto + "por" + total + " reais");
 
 console.log(`Você comprou: ${quantidade} ${produto} por ${total} reais.`);
 
@@ -168,7 +168,7 @@ console.log(numeroQuebrado);
 // Utilizando o number()*Mais indicado para o dia a dia.
 
 let stringNumero22 = "22"
-let numero22 =  Number(stringNumero22)
+let numero22 = Number(stringNumero22)
 console.log(numero22);
 
 //Usando Operador "+ antes do nomeda variavel"
@@ -201,177 +201,306 @@ console.log(stringNumero33);
  - Com estas estruturas podemos alterar o fluxode execução;
  - O Caminho dependerá das condições e comparações;*/
 
- //USANDO If
+//USANDO If
 
- // if: Executarum bloco de código, se uam condição for verdadeira.
+// if: Executarum bloco de código, se uam condição for verdadeira.
 
- // SINTAXE: if (condição){}
+// SINTAXE: if (condição){}
 
- // Exemplo 01
+// Exemplo 01
 
- let idadeMaria = 71
+let idadeMaria = 71
 
- let idadeJoao = 63
+let idadeJoao = 63
 
- if (idadeMaria  > idadeJoao){
-    console.log("exemplo 01 de if: Ih rapaz, a Maria é mais velha que o João");    
- }
-
- // Exemplo 02
-
- let usuario = "Gustavo"
-
- if (usuario === "Gustavo"){
-    console.log(`Fala meu camarada ${usuario}, seu casca de bala!`);
-    
- }
-
- // Usando o else if
-
- // else if: Adiciona uam nova condição, se a condição anterior for falsa.
-
- /* Sintaxe:
- 
- if (condição){
+if (idadeMaria > idadeJoao) {
+    console.log("exemplo 01 de if: Ih rapaz, a Maria é mais velha que o João");
 }
- else if (outraCondicao){
+
+// Exemplo 02
+
+let usuario = "Gustavo"
+
+if (usuario === "Gustavo") {
+    console.log(`Fala meu camarada ${usuario}, seu casca de bala!`);
+
+}
+
+// Usando o else if
+
+// else if: Adiciona uam nova condição, se a condição anterior for falsa.
+
+/* Sintaxe:
+ 
+if (condição){
+}
+else if (outraCondicao){
 }*/
 
 // EXEMPLO 01
 
 let logadoTikTok = false
 
-if (logadoTikTok === true){
-    console.log("Bem-vindo meu caro desocupado!");    
+if (logadoTikTok === true) {
+    console.log("Bem-vindo meu caro desocupado!");
 }
 
-else if(logadoTikTok===false){
-    console.log("Até que enfim,foi lavar a louça!");    
+else if (logadoTikTok === false) {
+    console.log("Até que enfim,foi lavar a louça!");
 }
 
 // Exemplo 02
 
 let nomeUsuaria = "Vanessa"
 
-if (nomeUsuaria==="Rebeca"){
-    console.log("Seja bem-vinda Rebeca. Vamos estudar?");    
+if (nomeUsuaria === "Rebeca") {
+    console.log("Seja bem-vinda Rebeca. Vamos estudar?");
 }
 
-else if (nomeUsuaria==="Leticia"){
-    console.log("Seja bem-vinda Leticia. Vamos Estudar?");    
+else if (nomeUsuaria === "Leticia") {
+    console.log("Seja bem-vinda Leticia. Vamos Estudar?");
 }
 
-else if (nomeUsuaria==="Vanessa"){
-    console.log("Seja bem-vinda Vanessa. Vamos Estudar?");    
+else if (nomeUsuaria === "Vanessa") {
+    console.log("Seja bem-vinda Vanessa. Vamos Estudar?");
 }
 
 // USANDO o else
 
-    /*else: Executa um bloco de códigos se todas as condições anteriores forem falsas.
-    
-    Sintaxe:
-    
-    if (condição){}
-
-    else if (outra condição){}
-
-    else {} */
-
-    // if e o else, só temos 1, no ínicio e outro no final.
-    // else if, eu posso ter vários ao longo da comparação;
-
-    // EXEMPLO 01
-
-    let corEscolhida = "Preta"
-
-    if (corEscolhida=== "Branca"){
-        console.log("Ótima escolha! Seu possante será branco!");
-        }
-
-    else if (corEscolhida=== "Vermelha"){
-        console.log("Caraca feio,teu carro vai ser vermelho.");
-    }
-
-    else {
-        console.log("Poxa, só temos duas cores disponiveis no momento. Escolha Branco ou Vermelho.");
-    }
-
-    // EXEMPLO 02
-
-    let idadeUsuario = 37
-
-    if (idadeUsuario <=17){
-        console.log("Este site não é permitido o acesso por menores de idade.");        
-    }
-
-    else if (idadeUsuario ===18){
-        console.log("Juizo ai meu nobre!");        
-    }
-
-    else if (idadeUsuario >= 90){
-        console.log("Eita nois,então tá... Olha o coração!");        
-    }
-
-    else {
-        console.log("Boa Diversão.");
-    }
-
-    // OPERADORES LÓGICOS
-
- // EXEMPLO 01 - && "ANO"
-
- let nomeUsuario01 = "Marcos"
- let senhaUsuario = 1234
-
- if (nomeUsuario01==="marcos" && senhaUsuario===2432) {
-    console.log("Login realizado com sucesso.");    
- }
-
- else{
-    console.log("Insira os dados corretamente.");    
- }
-
- // EXEMPLO 02
-
- let temDinheiro = true
- let  temCartao = false
-
- if (temDinheiro === true || temCartao=== true){
-    console.log("Pode efetuar a compra.");    
- }
-
- else {
-    console.log( "Tá liso feio");    
- }
-
- // EXEMPLO 03 ! "NOT"
-
- let estaChovendo = true
+/*else: Executa um bloco de códigos se todas as condições anteriores forem falsas.
  
- if(!estaChovendo){
-    console.log("Parece que não está chovendo, que tal uma voltinha de bike?");    
- }
+Sintaxe:
+ 
+if (condição){}
 
- else{
-    console.log("Ih, tá chovendo! Melhor deixar para depois...");    
- }
+else if (outra condição){}
 
- // EXEMPLO PRÁTICO COM && E OR
+else {} */
 
- let idadeParticipante  = 20
- let temDocumento = true
+// if e o else, só temos 1, no ínicio e outro no final.
+// else if, eu posso ter vários ao longo da comparação;
 
- if(idadeParticipante <= 17 && temDocumento){
-    console.log("Menor, mas pode paricipar do evento.");    
- }
+// EXEMPLO 01
 
- else if (idadeParticipante <= 17 || !temDocumento){
-    console.log("Não pode participar.");    
- }
+let corEscolhida = "Preta"
 
- else{
-    console.log("Pode participar.");    
- }
+if (corEscolhida === "Branca") {
+    console.log("Ótima escolha! Seu possante será branco!");
+}
+
+else if (corEscolhida === "Vermelha") {
+    console.log("Caraca feio,teu carro vai ser vermelho.");
+}
+
+else {
+    console.log("Poxa, só temos duas cores disponiveis no momento. Escolha Branco ou Vermelho.");
+}
+
+// EXEMPLO 02
+
+let idadeUsuario = 37
+
+if (idadeUsuario <= 17) {
+    console.log("Este site não é permitido o acesso por menores de idade.");
+}
+
+else if (idadeUsuario === 18) {
+    console.log("Juizo ai meu nobre!");
+}
+
+else if (idadeUsuario >= 90) {
+    console.log("Eita nois,então tá... Olha o coração!");
+}
+
+else {
+    console.log("Boa Diversão.");
+}
+
+// OPERADORES LÓGICOS
+
+// EXEMPLO 01 - && "ANO"
+
+let nomeUsuario01 = "Marcos"
+let senhaUsuario = 1234
+
+if (nomeUsuario01 === "marcos" && senhaUsuario === 2432) {
+    console.log("Login realizado com sucesso.");
+}
+
+else {
+    console.log("Insira os dados corretamente.");
+}
+
+// EXEMPLO 02
+
+let temDinheiro = true
+let temCartao = false
+
+if (temDinheiro === true || temCartao === true) {
+    console.log("Pode efetuar a compra.");
+}
+
+else {
+    console.log("Tá liso feio");
+}
+
+// EXEMPLO 03 ! "NOT"
+
+let estaChovendo = true
+
+if (!estaChovendo) {
+    console.log("Parece que não está chovendo, que tal uma voltinha de bike?");
+}
+
+else {
+    console.log("Ih, tá chovendo! Melhor deixar para depois...");
+}
+
+// EXEMPLO PRÁTICO COM && E OR
+
+let idadeParticipante = 20
+let temDocumento = true
+
+if (idadeParticipante <= 17 && temDocumento) {
+    console.log("Menor, mas pode paricipar do evento.");
+}
+
+else if (idadeParticipante <= 17 || !temDocumento) {
+    console.log("Não pode participar.");
+}
+
+else {
+    console.log("Pode participar.");
+}
+
+// Estrutura Condicional : SWITCH
+
+
+/*
+SINTAXE: Switch (espressão){
+case valor1:
+
+break
+valor2:
+   
+break
+
+default:
+   //Còdigo a ser executado se nenhum dos casos anteriores for resondido.
+}
+*/
+
+//Exemplo 01 -- Verificar o valor davariavel job
+
+const job = "Programador"
+
+switch (job) {
+    case "Programador":
+        console.log("Você é um programador");
+
+        break;
+
+    case "Advogado":
+        console.log("Você é um Advogado");
+
+        break;
+
+    case "Engenheiro":
+        console.log("Você é um Engenheiro");
+        break;
+
+    default:
+        console.log("Profissão não encontrada!");
+        break;
+}
+
+// Exemplo 02 - Dias da Semana
+
+let dia = 3
+
+switch (dia) {
+    case 1:
+        console.log("Dominigo");
+
+        break;
+
+    case 2:
+        console.log("Segunda-Feira");
+        break;
+
+    case 3:
+        console.log("Terça-Feira");
+        break
+
+    case 4:
+        console.log("Quarta-Feira");
+
+        break;
+
+    case 5:
+        console.log("Quinta-Feira");
+        break;
+
+    case 6:
+        console.log("Sexta-Feira");
+        break;
+
+    case 7:
+        console.log("Sabado");
+        break;
+
+    default:
+        console.log("Dia Invalido");
+
+        break;
+}
+
+//INCREMETO E DECREMENTO: São usados para aumentar ou diminuir o valor de uma variavel númerica em +1 ou -1
+
+// ANTES DA VARIAVEL: Quando você usa o operador de incremento ou decremento antes da variavel(++variavel ou --variavel)
+
+// Incremento
+
+let contagemMais = 5
+
+let resultadoMais =++contagemMais * 2
+
+console.log(`O resultadoMais ficou: ${resultadoMais}`);
+console.log(`A contagemMais fico: ${contagemMais} `);
+
+// Decremento
+
+let contagemMenos = 5
+
+let resultadoMenos = --contagemMenos * 2
+
+console.log(`O resultadoMenos ficou: ${resultadoMenos}`);
+console.log(`O contagemMenos ficou: ${contagemMenos}`);
+
+// Depois da Variavel: Quando vocêusaooperador de incremento ou decremento depois da variavel(variavel++ ou variavel--) o valor inicial da variavel é usado em qualquer explessão, ai somente depois é efetuado a mudança.
+
+// Incremento
+
+let contagemMais2 = 6
+
+let resutadoMais2 = contagemMais2++ * 2
+console.log(`O resultadoMais2 ficou: ${resutadoMais2}`);
+console.log(`O contagemMais2 ficou: ${contagemMais2}`);
+
+// Decremento
+
+let contagemMenos2 = 5
+let resultadoMenos2 = contagemMenos2-- * 2
+console.log( `O resultaoMenos2 ficou: ${resultadoMenos2}`);
+console.log(`O contagemMenos2 ficou: ${contagemMenos2}`);
+
+
+
+
+
+
+
+
 
 
 
