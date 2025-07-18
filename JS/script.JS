@@ -463,7 +463,7 @@ switch (dia) {
 
 let contagemMais = 5
 
-let resultadoMais =++contagemMais * 2
+let resultadoMais = ++contagemMais * 2
 
 console.log(`O resultadoMais ficou: ${resultadoMais}`);
 console.log(`A contagemMais fico: ${contagemMais} `);
@@ -491,8 +491,169 @@ console.log(`O contagemMais2 ficou: ${contagemMais2}`);
 
 let contagemMenos2 = 5
 let resultadoMenos2 = contagemMenos2-- * 2
-console.log( `O resultaoMenos2 ficou: ${resultadoMenos2}`);
+console.log(`O resultaoMenos2 ficou: ${resultadoMenos2}`);
 console.log(`O contagemMenos2 ficou: ${contagemMenos2}`);
+
+// Estruturas de Repetição
+
+// WHILE: é usada para repetir um bloco de código enquantouma condição especifica for verdadeira.
+
+//SINTAXE: while(condição){}
+
+// Exemplo 01
+
+let contagemRegressiva = 10
+
+while (contagemRegressiva > 0) {
+    console.log(contagemRegressiva);
+    contagemRegressiva--
+}
+
+console.log("Feliz Ano novo!");
+
+// Exemplo 2
+
+let estoque = 5
+
+while (estoque > 0) {
+    console.log("Produto em estoque. Quantidade restante" + estoque);
+    estoque--
+}
+
+console.log("Produto esgotado!");
+
+// FOR: é usado quando você sabe ezatamente quantas vezes, deseja repetir um ação. ELe consiste em 3 partes: inicialização, condição e expressão final.
+
+// Sintaxe: for(inicialização; condição; expressão fina) {}
+
+// Exemplo 01
+
+for (let i = 1; i < 10; i++) {
+    console.log("Repetindo algo...");
+}
+
+// Exemplo 02
+
+let estoque1 = 10
+
+for (estoque1; estoque1 > 0; estoque1 = estoque1 - 1) {
+    console.log(`O estoque está diminuindo: ${estoque1}`);
+}
+
+console.log(`O estoque é igual a:${estoque1}`);
+
+// Forçando a saída de um loop
+// Com a instrução do break podemos parar um loop, fazendo com que as repetições cessem.
+// Isso pode poupar memória, pois o códigoserá executadp menos vezes.
+// Observação: seu uso não é muito comum, mas pe um recurso válido.
+
+// Exemplo
+
+let estoque2 = 20
+for (estoque2; estoque2 > 10; estoque2--) {
+    console.log(`O estoque é: ${estoque2}`);
+
+
+    if (estoque2 === 15) {
+        console.log("Atenção! O estoque chegou em 15 unidades.");
+    }
+
+}
+
+// Pulando uma execussão do loop
+// A palavra reservada continue, pode pular uma ou mais execuções do loop.
+// É um recurso utilizado de forma semelhante ao break.
+
+// Exemplo
+
+for (let f = 1; f <= 5; f++) {
+    if (f === 3) {
+        continue
+    }
+    console.log("Contagem: " + f);
+}
+
+/*O que são funções*/
+
+// SINTAXE: function nomeDafuncao(){}
+
+// Exemplo 1 - Uso básico
+
+function minhaFuncao() {
+    console.log("Testando, 1, 2, 3...");    
+}
+
+minhaFuncao()
+
+// Exemplo 2 - Usando umafunção em uma variavel
+
+const minhaFuncaoEmVariavel = function() {
+    console.log("Usando uma função em Váriavel");    
+}
+
+minhaFuncaoEmVariavel()
+
+// Exemplo 3 - Usando uma função com Parâmetro
+
+function funcaoComParamentro(txt) {
+    console.log(`${txt}`);    
+}
+
+funcaoComParamentro("Hoje é quinta-feira negada!!!")
+
+// A palavra reservado return, é fundamental em funções, porque permitem que elas produzam algum resultado, que pode ser usado em outras partes do código. Sem o mesmo, não conseguimos usaro resultado dela em outra parte do código.
+
+// EXEMPLO COM RETURN
+
+const a = 10
+const b = 20
+const c = 30
+const d = 40
+
+function somandoNumeros(n1, n2){
+    return n1 + n2
+}
+
+const resultado = somandoNumeros(a, b)
+
+console.log(resultado);
+
+console.log(somandoNumeros(c, d));
+
+/* Escolpo das funções */
+
+let varTeste = 10
+
+function testandoEscolpo(){
+    let varTeste = 20
+    console.log(`Exemplo de Escolpo: Variavel dentro da função: ${varTeste}`);    
+}
+console.log(`Exmplode Escolpo: Variavel fora da função: ${varTeste}`);
+
+testandoEscolpo()
+
+// Escolpo Anihado
+
+let varTeste2 = 10
+
+function escolpoAninhado(){
+    let varTeste2 =20;
+
+    if(varTeste2 === 20){
+        let varTeste2 = 30;
+        console.log(`Escolpo aninhado: Valor da variavel dentro do IF: ${varTeste2}`);        
+    }
+    console.log(`Escolpo aninhado: Valor da variavel dentro da Função: ${varTeste2}`);    
+}
+
+escolpoAninhado()
+console.log(`Escolpo aninhado: Valor da variavel fora da Função: ${varTeste2}`);
+
+
+
+
+
+
 
 
 
